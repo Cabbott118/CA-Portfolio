@@ -1,0 +1,32 @@
+{
+  "name": "ca-portfolio",
+  "version": "1.0.0",
+  "description": "Caleb Abbott's React Portfolio",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cabbott118/CA-Portfolio.git"
+  },
+  "author": "Caleb Abbott",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Cabbott118/CA-Portfolio/issues"
+  },
+  "homepage": "https://github.com/Cabbott118/CA-Portfolio#readme",
+  "dependencies": {
+    "concurrently": "^5.1.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
