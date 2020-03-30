@@ -1,39 +1,36 @@
 import React, { Component } from 'react';
-import {
-  Collapse,
-  Container,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavLink
-} from 'reactstrap';
+import { Container, Navbar, Nav, NavLink, Row } from 'reactstrap';
+
+const navbarStyle = {
+  backgroundColor: 'rgba(0, 0, 0, .8)'
+};
 
 class AppNavbar extends Component {
-  state = {
-    isOpen: false
-  };
-
-  toggle = () => {
-    this.setState({
-      isOpen: !this.state.isOpen
-    });
-  };
-
   render() {
     return (
-      <div>
-        <Navbar color='light' light expand='md'>
+      <div style={navbarStyle}>
+        <Navbar fixed='top' dark expand='md'>
           <Container>
-            <NavbarBrand href='/'>Caleb Abbott</NavbarBrand>
-            <NavbarToggler onClick={this.toggle} />
-            <Collapse isOpen={this.state.isOpen} navbar>
-              <Nav className='ml-auto' navbar>
+            <Nav className='mr-auto' navbar>
+              <Row>
                 <NavLink href='/'>About</NavLink>
-                <NavLink href='/projects'>Projects</NavLink>
-                <NavLink href='/contact'>Contact</NavLink>
-              </Nav>
-            </Collapse>
+                <NavLink href='/'>Projects</NavLink>
+                <NavLink href='/'>Contact</NavLink>
+              </Row>
+            </Nav>
+            <Nav className='ml-auto' navbar>
+              <Row>
+                <NavLink target='_blank' href='https://github.com/Cabbott118'>
+                  <i className='fab fa-github'></i>
+                </NavLink>
+                <NavLink
+                  target='_blank'
+                  href='https://www.linkedin.com/in/caleb-abbott-961007193/'
+                >
+                  <i className='fab fa-linkedin'></i>
+                </NavLink>
+              </Row>
+            </Nav>
           </Container>
         </Navbar>
       </div>
