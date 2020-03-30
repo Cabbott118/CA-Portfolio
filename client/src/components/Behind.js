@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import AppNavBar from './AppNavbar';
 import Landing from './Landing';
+import ProjectsHolder from './ProjectsHolder';
 import Background from '../images/backgroundOne.jpg';
 const behindStyle = {
   backgroundImage: `url(${Background})`,
@@ -16,6 +17,7 @@ class Behind extends Component {
       <div style={behindStyle}>
         <AppNavBar />
         <Landing />
+        <ProjectsHolder />
       </div>
     );
   }
