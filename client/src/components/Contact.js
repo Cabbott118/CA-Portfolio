@@ -91,8 +91,7 @@ class Contact extends Component {
                 color='success'
                 isOpen={this.state.isOpen}
               >
-                Thank you for reaching out, I will be getting back to you
-                shortly!
+                Thanks for reaching out, I'll get back to you soon!
               </Alert>
               <Button
                 className='mt-3 mb-5'
