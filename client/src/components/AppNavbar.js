@@ -14,7 +14,7 @@ class AppNavbar extends Component {
           <Container>
             <Nav className='mr-auto' navbar>
               <Row>
-                <NavLink className='navItems' href='/'>
+                <NavLink className='navItems aboutMe' href='/'>
                   About
                 </NavLink>
                 <NavLink className='navItems' href='/'>

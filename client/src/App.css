@@ -15,11 +15,25 @@ i {
   font-size: 1.3rem;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px rgb(8, 8, 10) inset !important;
+}
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: rgb(69, 162, 158) !important;
+}
+
 @media screen and (max-width: 766px) {
   .navBar {
     background-color: rgb(8, 8, 10, 1);
   }
   .navItems {
     margin-right: 1rem;
+  }
+  .aboutMe {
+    margin-left: 0.8rem;
   }
 }
