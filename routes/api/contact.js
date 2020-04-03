@@ -4,6 +4,7 @@ const nodemailer = require('nodemailer');
 const dotenv = require('dotenv').config();
 const user = process.env.USER_EMAIL;
 const pass = process.env.USER_PASS;
+const myEmail = process.env.MY_EMAIL;
 
 router.use(express.json());
 router.use(express.urlencoded({ extended: true }));
@@ -21,7 +22,7 @@ router.post('/', (req, res) => {
 
   const mailOpts = {
     from: 'PORTFOLIO',
-    to: user,
+    to: myEmail,
     subject: 'NEW MESSAGE FROM YOUR PORTFOLIO',
     text: `${req.body.name} (${req.body.email}) says: ${req.body.message}`
   };

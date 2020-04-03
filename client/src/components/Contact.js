@@ -70,7 +70,11 @@ class Contact extends Component {
               placeholder='Enter your message here'
               required
             />
-            <Alert color='success' isOpen={this.state.isOpen}>
+            <Alert
+              className='mt-3 mb-3'
+              color='success'
+              isOpen={this.state.isOpen}
+            >
               Thank you for reaching out, I will be getting back to you shortly!
             </Alert>
             <Button
