@@ -15,7 +15,8 @@ const formStyle = {
 };
 
 const inputStyle = {
-  backgroundColor: 'rgb(8, 8, 10)'
+  backgroundColor: 'rgb(8, 8, 10)',
+  color: 'white'
 };
 
 class Contact extends Component {
