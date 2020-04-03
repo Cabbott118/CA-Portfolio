@@ -23,7 +23,7 @@ router.post('/', (req, res) => {
   const mailOpts = {
     from: 'PORTFOLIO',
     to: myEmail,
-    subject: 'NEW MESSAGE FROM YOUR PORTFOLIO',
+    subject: `${req.body.name} has emailed you from your portfolio`,
     text: `${req.body.name} (${req.body.email}) says: ${req.body.message}`
   };
 
