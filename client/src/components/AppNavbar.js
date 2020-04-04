@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Navbar, Nav, NavLink, Row } from 'reactstrap';
-
+import { Link } from 'react-scroll';
+import pdfResume from '../assets/Caleb-Resume.pdf';
 const navbarStyle = {
   backgroundColor: 'rgba(0, 0, 0, .8)',
   fontFamily: 'Roboto Mono'
@@ -14,15 +15,38 @@ class AppNavbar extends Component {
           <Container>
             <Nav className='mr-auto' navbar>
               <Row>
-                <NavLink className='navItems' href='#projects-id'>
+                <Link
+                  className='ml-1 mr-3'
+                  activeClass='active'
+                  to='about'
+                  spy={true}
+                  smooth={true}
+                  offset={-150}
+                  duration={500}
+                >
                   About
-                </NavLink>
-                <NavLink className='navItems' href='/'>
+                </Link>
+                <Link
+                  className='mr-3'
+                  activeClass='active'
+                  to='projects'
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={500}
+                >
                   Projects
-                </NavLink>
-                <NavLink className='navItems' href='/'>
+                </Link>
+                <Link
+                  activeClass='active'
+                  to='contact'
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={500}
+                >
                   Contact
-                </NavLink>
+                </Link>
               </Row>
             </Nav>
             <Nav className='ml-auto' navbar>
@@ -35,6 +59,9 @@ class AppNavbar extends Component {
                   href='https://www.linkedin.com/in/caleb-abbott-961007193/'
                 >
                   <i className='fab fa-linkedin navItems'></i>
+                </NavLink>
+                <NavLink target='_blank' href={pdfResume}>
+                  <i className='far fa-file navItems'></i>
                 </NavLink>
               </Row>
             </Nav>

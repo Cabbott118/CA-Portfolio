@@ -47,7 +47,7 @@ class Contact extends Component {
 
   render() {
     return (
-      <div style={contactStyle}>
+      <div id='contact' style={contactStyle}>
         <Container>
           <div style={formStyle}>
             <h4 className='text-center mb-3'>Let's Work Together!</h4>

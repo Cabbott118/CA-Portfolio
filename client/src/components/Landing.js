@@ -12,7 +12,7 @@ class Landing extends Component {
     return (
       <div style={landingStyle}>
         <Container>
-          <div className='text-center'>
+          <div id='about' className='text-center'>
             <h4>Hello, my name is</h4>
             <h1>
               <b>CALEB ABBOTT</b>
