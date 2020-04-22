@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import P3 from '../images/p3thumbnail.JPG';
 import VGH from '../images/vgh.JPG';
+import thePatch from '../images/the-patch.JPG';
 import {
   Button,
   Col,
@@ -8,14 +9,14 @@ import {
   CardBody,
   CardImg,
   CardTitle,
-  Row
+  Row,
 } from 'reactstrap';
 const cardStyle = {
-  backgroundColor: 'rgb(25, 27, 29)'
+  backgroundColor: 'rgb(25, 27, 29)',
 };
 
 const buttonStyle = {
-  backgroundColor: '#45A29E'
+  backgroundColor: '#45A29E',
 };
 class Projects extends Component {
   render() {
@@ -26,17 +27,17 @@ class Projects extends Component {
             <Card style={cardStyle}>
               <CardImg
                 top
-                height='120px'
+                height='200px'
                 width='100%'
-                src={P3}
-                alt='Project 3'
+                src={thePatch}
+                alt='The Patch'
               />
               <CardBody>
                 <CardTitle className='text-center'>
-                  <h4>LoadCo</h4>
+                  <h4>The Patch</h4>
                 </CardTitle>
                 <Button
-                  href='https://ca-company-tbd.herokuapp.com/'
+                  href='https://cha-social.herokuapp.com/'
                   target='_blank'
                   block
                   style={buttonStyle}
@@ -44,11 +45,11 @@ class Projects extends Component {
                   Website
                 </Button>
                 <Button
-                  href='https://github.com/Cabbott118/Project-3'
+                  href='https://github.com/Cabbott118/Social-Media'
                   target='_blank'
                   block
                 >
-                  Code
+                  Front-End Code
                 </Button>
               </CardBody>
             </Card>
@@ -57,7 +58,7 @@ class Projects extends Component {
             <Card style={cardStyle}>
               <CardImg
                 top
-                height='120px'
+                height='200px'
                 width='100%'
                 src={VGH}
                 alt='VGHypeman'
