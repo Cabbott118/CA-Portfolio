@@ -4,7 +4,7 @@ import { Container } from 'reactstrap';
 const landingStyle = {
   backgroundColor: 'rgba(0, 0, 0, .8)',
   paddingTop: '150px',
-  minHeight: '100vh'
+  minHeight: '100vh',
 };
 
 class Landing extends Component {
@@ -18,6 +18,16 @@ class Landing extends Component {
               <b>CALEB ABBOTT</b>
             </h1>
             <h4>Full Stack Web Developer</h4>
+            <br />
+
+            <h5 style={{ lineHeight: '1.2' }}>
+              I hold a certificate in Full Stack Web Development from the
+              University of Central Florida. Technology has always excited my
+              attention, which led me to pursue it as a career path. I am hungry
+              for knowledge and am willing to try new things to further develop
+              my skill set. If you would like me to join your team, or simply
+              see what I might be able to offer you, feel free to reach out!
+            </h5>
           </div>
         </Container>
       </div>

@@ -35,6 +35,10 @@ class Projects extends Component {
               <CardBody>
                 <CardTitle className='text-center'>
                   <h4>The Patch</h4>
+                  <h6>
+                    A small Social Media Website developed with React and Redux,
+                    with a Firebase back-end.
+                  </h6>
                 </CardTitle>
                 <Button
                   href='https://cha-social.herokuapp.com/'
@@ -66,6 +70,10 @@ class Projects extends Component {
               <CardBody>
                 <CardTitle className='text-center'>
                   <h4>VGHypeman</h4>
+                  <h6>
+                    A Vue application that brings users closer to their favorite
+                    video games. Built using Vue and MySQL.
+                  </h6>
                 </CardTitle>
                 <Button
                   href='https://vghypeman.herokuapp.com/'
