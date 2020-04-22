@@ -36,4 +36,7 @@ input:-webkit-autofill {
   .aboutMe {
     margin-left: 0.8rem;
   }
+  h5 {
+    font-size: 0.8rem;
+  }
 }
