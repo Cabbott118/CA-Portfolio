@@ -5,23 +5,28 @@ import { Alert, Container, Button, Form, Label, Input } from 'reactstrap';
 const contactStyle = {
   paddingTop: '3rem',
   width: '100%',
-  backgroundColor: 'rgb(8, 8, 10)'
+  backgroundColor: 'rgb(8, 8, 10)',
 };
 
 const formStyle = {
   width: '80%',
   marginLeft: 'auto',
-  marginRight: 'auto'
+  marginRight: 'auto',
 };
 
 const inputStyle = {
   backgroundColor: 'rgb(8, 8, 10)',
-  color: 'white'
+  color: 'white',
+};
+
+const emailStyle = {
+  color: '#45A29E',
+  textDecoration: 'none',
 };
 
 class Contact extends Component {
   state = {
-    isOpen: false
+    isOpen: false,
   };
 
   handleSubmit(e) {
@@ -35,12 +40,12 @@ class Contact extends Component {
       data: {
         name: name,
         email: email,
-        message: message
-      }
+        message: message,
+      },
     }).then(
       document.getElementById('contact-form').reset(),
       this.setState({
-        isOpen: !this.state.isOpen
+        isOpen: !this.state.isOpen,
       })
     );
   }
@@ -51,6 +56,13 @@ class Contact extends Component {
         <Container>
           <div style={formStyle}>
             <h4 className='text-center mb-3'>Let's Work Together!</h4>
+            <h6 className='text-center mb-3'>
+              <a style={emailStyle} href='mailto:calebhaabbott94@gmail.com'>
+                Email
+              </a>{' '}
+              me directly
+            </h6>
+
             <Form
               onSubmit={this.handleSubmit.bind(this)}
               id='contact-form'

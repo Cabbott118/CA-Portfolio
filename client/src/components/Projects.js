@@ -18,6 +18,10 @@ const cardStyle = {
 const buttonStyle = {
   backgroundColor: '#45A29E',
 };
+
+const spanStyle = {
+  color: '#45A29E',
+};
 class Projects extends Component {
   render() {
     return (
@@ -34,10 +38,14 @@ class Projects extends Component {
               />
               <CardBody>
                 <CardTitle className='text-center'>
-                  <h4>The Patch</h4>
+                  <h4 style={spanStyle}>The Patch</h4>
                   <h6>
-                    A small Social Media Website developed with React and Redux,
-                    with a Firebase back-end.
+                    A simple social media app featuring unique user accounts,
+                    posts, likes, and comments.
+                  </h6>
+                  <h6>
+                    <span style={spanStyle}>Technologies Utilized:</span> React,
+                    Redux, MaterialUI, Node, Express, Firebase
                   </h6>
                 </CardTitle>
                 <Button
@@ -69,10 +77,15 @@ class Projects extends Component {
               />
               <CardBody>
                 <CardTitle className='text-center'>
-                  <h4>VGHypeman</h4>
+                  <h4 style={spanStyle}>VGHypeman</h4>
                   <h6>
-                    A Vue application that brings users closer to their favorite
-                    video games. Built using Vue and MySQL.
+                    VGHypeman is a video game search engine that brings general
+                    information, Youtube videos, and Twitch streams to your
+                    fingertips with the click of a button.
+                  </h6>
+                  <h6>
+                    <span style={spanStyle}>Technologies Utilized:</span> Vue,
+                    Materialize, Slick.js, Sequelize, Node, Express
                   </h6>
                 </CardTitle>
                 <Button

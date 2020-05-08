@@ -7,6 +7,10 @@ const landingStyle = {
   minHeight: '100vh',
 };
 
+const spanStyle = {
+  color: '#45A29E',
+};
+
 class Landing extends Component {
   render() {
     return (
@@ -15,7 +19,7 @@ class Landing extends Component {
           <div id='about' className='text-center'>
             <h4>Hello, my name is</h4>
             <h1>
-              <b>CALEB ABBOTT</b>
+              <b style={spanStyle}>CALEB ABBOTT</b>
             </h1>
             <h4>Full Stack Web Developer</h4>
             <br />
