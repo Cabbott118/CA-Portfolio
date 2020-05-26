@@ -29,6 +29,40 @@ class Projects extends Component {
         <Row>
           <Col className='mb-3' sm='6'>
             <Card style={cardStyle}>
+              <CardImg top height='200px' width='100%' src={P3} alt='LoadCo' />
+              <CardBody>
+                <CardTitle className='text-center'>
+                  <h4 style={spanStyle}>LoadCo</h4>
+                  <h6>
+                    LoadCo is a website that allows users to list and rent
+                    trailers in one convenient location after simply registering
+                    an account.
+                  </h6>
+                  <h6>
+                    <span style={spanStyle}>Technologies Utilized:</span> React,
+                    Reactstrap, Redux, MongoDB, Node, Express
+                  </h6>
+                </CardTitle>
+                <Button
+                  href='https://ca-company-tbd.herokuapp.com/'
+                  target='_blank'
+                  block
+                  style={buttonStyle}
+                >
+                  Website
+                </Button>
+                <Button
+                  href='https://github.com/Cabbott118/Project-3'
+                  target='_blank'
+                  block
+                >
+                  Code
+                </Button>
+              </CardBody>
+            </Card>
+          </Col>
+          <Col className='mb-3' sm='6'>
+            <Card style={cardStyle}>
               <CardImg
                 top
                 height='200px'
