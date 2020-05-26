@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { Container, Navbar, Nav, NavLink, Row } from 'reactstrap';
 import { Link } from 'react-scroll';
-import pdfResume from '../assets/Caleb-Resume.pdf';
+import pdfResume from '../assets/Caleb Resume ATS Friendly.pdf';
 const navbarStyle = {
   backgroundColor: 'rgba(0, 0, 0, .8)',
-  fontFamily: 'Roboto Mono'
+  fontFamily: 'Roboto Mono',
 };
 
 class AppNavbar extends Component {
