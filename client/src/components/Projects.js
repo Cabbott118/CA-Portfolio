@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import P3 from '../images/p3thumbnail.JPG';
+import RentNet from '../images/RentNet.JPG';
 import VGH from '../images/vgh.JPG';
 import thePatch from '../images/the-patch.JPG';
 import {
@@ -29,22 +29,28 @@ class Projects extends Component {
         <Row>
           <Col className='mb-3' sm='6'>
             <Card style={cardStyle}>
-              <CardImg top height='200px' width='100%' src={P3} alt='LoadCo' />
+              <CardImg
+                top
+                height='200px'
+                width='100%'
+                src={RentNet}
+                alt='Rent-Net'
+              />
               <CardBody>
                 <CardTitle className='text-center'>
-                  <h4 style={spanStyle}>LoadCo</h4>
+                  <h4 style={spanStyle}>Rent-Net</h4>
                   <h6>
-                    LoadCo is a website that allows users to list and rent
+                    Rent-Net is a website that allows users to list and rent
                     trailers in one convenient location after simply registering
                     an account.
                   </h6>
                   <h6>
                     <span style={spanStyle}>Technologies Utilized:</span> React,
-                    Reactstrap, Redux, MongoDB, Node, Express
+                    Material-UI, Redux, MongoDB, Node, Express
                   </h6>
                 </CardTitle>
                 <Button
-                  href='https://ca-company-tbd.herokuapp.com/'
+                  href='https://rent-net.herokuapp.com/'
                   target='_blank'
                   block
                   style={buttonStyle}
@@ -52,7 +58,7 @@ class Projects extends Component {
                   Website
                 </Button>
                 <Button
-                  href='https://github.com/Cabbott118/Project-3'
+                  href='https://github.com/Cabbott118/Rentnet'
                   target='_blank'
                   block
                 >
