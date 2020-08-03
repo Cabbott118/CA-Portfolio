@@ -16,20 +16,20 @@ router.post('/', (req, res) => {
     secure: true,
     auth: {
       user: user,
-      pass: pass
-    }
+      pass: pass,
+    },
   });
 
   const mailOpts = {
     from: 'PORTFOLIO',
     to: myEmail,
     subject: `${req.body.name} has emailed you from your portfolio`,
-    text: `${req.body.name} (${req.body.email}) says: ${req.body.message}`
+    text: `${req.body.name} (${req.body.email}) says: ${req.body.message}`,
   };
 
   smtpTrans.sendMail(mailOpts, (error, response) => {
     if (error) {
-      console.log('FAILURE ', error);
+      console.log('FAILURE', error);
     } else {
       console.log('SUCCESS');
     }
