@@ -52,7 +52,7 @@ export class ContactForm extends Component {
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     const message = document.getElementById('message').value;
-    if (name === '' && email === '' && message === '') {
+    if (name === '' || email === '' || message === '') {
       this.setState({
         error: true,
       });
