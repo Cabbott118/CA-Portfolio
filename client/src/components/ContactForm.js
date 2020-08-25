@@ -61,15 +61,27 @@ export class ContactForm extends Component {
         success: true,
         error: false,
       });
-      axios({
-        method: 'post',
-        url: 'api/contact',
-        data: {
+      // axios({
+      //   method: 'post',
+      //   url: 'api/contact',
+      //   data: {
+      //     name: name,
+      //     email: email,
+      //     message: message,
+      //   },
+      // });
+      axios
+        .post('api/contact', {
           name: name,
           email: email,
           message: message,
-        },
-      });
+        })
+        .then(function (response) {
+          console.log(response);
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
     }
   };
 
