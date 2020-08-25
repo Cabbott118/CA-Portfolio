@@ -11,9 +11,10 @@ router.use(express.urlencoded({ extended: true }));
 
 router.post('/', (req, res) => {
   const smtpTrans = nodemailer.createTransport({
-    host: 'smtp.gmail.com',
-    port: 465,
-    secure: true,
+    service: 'gmail',
+    // host: 'smtp.gmail.com',
+    // port: 465,
+    // secure: true,
     auth: {
       user: user,
       pass: pass,
